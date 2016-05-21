@@ -1,6 +1,10 @@
 
 package gui;
 
+import dao.EmpresaDao;
+import javax.swing.JOptionPane;
+
+
 
 public class EmpresaGUI extends javax.swing.JFrame {
 
@@ -212,7 +216,23 @@ public class EmpresaGUI extends javax.swing.JFrame {
         empresas.setTelefone(jTextField8.getText());
         empresas.setEmail(jTextField9.getText());
         System.out.println(empresas.cidade);
-                
+        
+        EmpresaDao dao = new EmpresaDao();
+        dao.adiciona(empresas);
+        JOptionPane.showMessageDialog(null, "Empresa "+jTextField1.getText()+" inserido com sucesso! ");
+        
+        
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
+        jTextField4.setText("");
+        jTextField5.setText("");
+        jTextField6.setText("");
+        jTextField7.setText("");
+        jTextField8.setText("");
+        jTextField9.setText("");
+
+               
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
