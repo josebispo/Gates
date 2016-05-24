@@ -12,6 +12,7 @@ public class Empresa {
     String numero;
     String telefone;
     String email;
+    
 
     public String getRazaosocial() {
         return razaosocial;
