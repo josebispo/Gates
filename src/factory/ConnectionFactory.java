@@ -13,7 +13,8 @@ public class ConnectionFactory {
         try {             
             return DriverManager.getConnection("jdbc:oracle:thin:@177.19.217.38:1521:XE","administrador","pi32016ucl");         
             }         
-        catch(SQLException excecao) {             
+        catch(SQLException excecao) {  
+            
             throw new RuntimeException(excecao);         
             }     
     } 
