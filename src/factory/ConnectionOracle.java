@@ -26,8 +26,8 @@ public class ConnectionOracle {
      */
     public ConnectionOracle( String host, String user, String pass ) {
         this.pass = pass;
-        this.user = user;
-        this.host = host;
+        this.user = "root";
+        this.host = "localhost";
     }
    
     /**

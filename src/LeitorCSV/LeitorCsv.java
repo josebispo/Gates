@@ -29,16 +29,13 @@ public class LeitorCsv {
  
             String[] pais = linha.split(csvDivisor);
             for (int i=0; i<4; i++){
-               if (pais[i].equals("Passivo Total"))
-               //if ((pais[pais.length-2]).equals("Passivo Total")){
-                    
-           System.out.println(pais[pais.length-2] + " " + pais[pais.length-1]);
-                                 
-            }
-        }
-                
+               if (pais[i].equals("Passivo Total")){
+                    System.out.println(pais[pais.length-2] + " " + pais[pais.length-1]);
 
-        
+             }
+              //if ((pais[pais.length-2]).equals("Passivo Total")){                                 
+            }
+        }      
 
     } catch (FileNotFoundException e) {
         e.printStackTrace();
