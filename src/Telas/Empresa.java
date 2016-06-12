@@ -1,5 +1,5 @@
 
-package gui;
+package Telas;
 
 
 public class Empresa {

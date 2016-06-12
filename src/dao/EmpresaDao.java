@@ -1,8 +1,8 @@
 
 package dao;
 import factory.ConnectionFactory; 
-import gui.Empresa; 
-import gui.EmpresaGUI;
+import Telas.Empresa; 
+import Telas.EmpresaGUI;
 import java.sql.*; 
 import java.sql.PreparedStatement;
 
