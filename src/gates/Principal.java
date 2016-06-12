@@ -1,10 +1,10 @@
 
-package testebd;
+package gates;
 
 import Telas.frmPrincipal;
 
 
-public class TesteBD {
+public class Principal {
 
     public static void main(String[] args) {
         

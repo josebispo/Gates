@@ -49,7 +49,7 @@ public class EmpresaGUI extends javax.swing.JFrame {
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         CNPJ.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        CNPJ.setText("CNPJ");
+        CNPJ.setText("Cnpj");
 
         Cidade.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Cidade.setText("Cidade");
@@ -61,10 +61,10 @@ public class EmpresaGUI extends javax.swing.JFrame {
         Numero.setText("Nº");
 
         UF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        UF.setText("UF");
+        UF.setText("Uf");
 
         Cep.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Cep.setText("CEP");
+        Cep.setText("Cep");
 
         Telefone.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Telefone.setText("Telefone");
@@ -212,10 +212,12 @@ public class EmpresaGUI extends javax.swing.JFrame {
                             .addComponent(Rua))))
                 .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(UF)
                     .addComponent(jTextFieldUf, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Email)
-                    .addComponent(jTextFieldEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextFieldEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(UF)
+                        .addGap(3, 3, 3)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(29, 29, 29)
