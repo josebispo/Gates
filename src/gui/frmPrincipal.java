@@ -48,6 +48,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         jMenu1.setText("Empresas");
 
+        menuCadastro.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jose Bispo\\Projetos\\Gates\\imagens\\Office-Customer-Male-Light-icon.png")); // NOI18N
         menuCadastro.setText("Cadastrar");
         menuCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -56,11 +57,13 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
         jMenu1.add(menuCadastro);
 
+        menuVisualizar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jose Bispo\\Projetos\\Gates\\imagens\\Actions-view-list-details-icon.png")); // NOI18N
         menuVisualizar.setText("Visualizar");
         jMenu1.add(menuVisualizar);
         jMenu1.add(jSeparator1);
 
         menuSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.SHIFT_MASK));
+        menuSair.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jose Bispo\\Projetos\\Gates\\imagens\\Actions-edit-delete-icon.png")); // NOI18N
         menuSair.setText("Sair");
         menuSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,6 +76,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         jMenu2.setText("Relatórios");
 
+        menuClientes.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jose Bispo\\Projetos\\Gates\\imagens\\Groups-Meeting-Dark-icon.png")); // NOI18N
         menuClientes.setText("Clientes");
         jMenu2.add(menuClientes);
 
