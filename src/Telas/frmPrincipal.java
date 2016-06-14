@@ -27,11 +27,13 @@ public class frmPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuItem1 = new javax.swing.JMenuItem();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         menuCadastro = new javax.swing.JMenuItem();
         menuVisualizar = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         menuSair = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
@@ -42,13 +44,12 @@ public class frmPrincipal extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
         menuSobre = new javax.swing.JMenuItem();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jMenuItem1.setText("jMenuItem1");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jose Bispo\\Projetos\\Gates\\imagens\\MobileAppsDevelopment2.jpg")); // NOI18N
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jMenu1.setText("Empresas");
 
-        menuCadastro.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jose Bispo\\Projetos\\Gates\\imagens\\Office-Customer-Male-Light-icon.png")); // NOI18N
         menuCadastro.setText("Cadastrar");
         menuCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,13 +58,19 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
         jMenu1.add(menuCadastro);
 
-        menuVisualizar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jose Bispo\\Projetos\\Gates\\imagens\\Actions-view-list-details-icon.png")); // NOI18N
         menuVisualizar.setText("Visualizar");
         jMenu1.add(menuVisualizar);
+
+        jMenuItem2.setText("Importar CSV");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem2);
         jMenu1.add(jSeparator1);
 
         menuSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.SHIFT_MASK));
-        menuSair.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jose Bispo\\Projetos\\Gates\\imagens\\Actions-edit-delete-icon.png")); // NOI18N
         menuSair.setText("Sair");
         menuSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,7 +83,6 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         jMenu2.setText("Relatórios");
 
-        menuClientes.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jose Bispo\\Projetos\\Gates\\imagens\\Groups-Meeting-Dark-icon.png")); // NOI18N
         menuClientes.setText("Clientes");
         jMenu2.add(menuClientes);
 
@@ -100,7 +106,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         jMenu3.setText("Ajuda");
 
         menuSobre.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.CTRL_MASK));
-        menuSobre.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jose Bispo\\Projetos\\Gates\\imagens\\Info-icon.png")); // NOI18N
         menuSobre.setText("Sobre");
         jMenu3.add(menuSobre);
 
@@ -140,6 +145,12 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void menuReceitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuReceitaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_menuReceitaActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+        SeletorGUI seletor = new SeletorGUI();
+        seletor.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,6 +194,8 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JMenuItem menuCadastro;
     private javax.swing.JMenuItem menuClientes;
