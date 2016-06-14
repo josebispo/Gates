@@ -11,7 +11,7 @@ public class ConnectionFactory {
    
     public Connection getConnection() {         
         try {             
-            return DriverManager.getConnection("jdbc:oracle:thin:@177.19.217.38:1521:XE","administrador","pi32016ucl");         
+            return DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","root","root");         
             }         
         catch(SQLException excecao) {  
             

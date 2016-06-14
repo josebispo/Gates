@@ -1,9 +1,9 @@
 
-package gui;
+package Telas;
 
 
 public class Empresa {
-    String razaosocial;
+    String nome;
     String cnpj;
     String cidade;
     String estado;
@@ -12,14 +12,15 @@ public class Empresa {
     String numero;
     String telefone;
     String email;
+    String atividade;
     
 
-    public String getRazaosocial() {
-        return razaosocial;
+    public String getNome() {
+        return nome;
     }
 
-    public void setRazaosocial(String razaosocial) {
-        this.razaosocial = razaosocial;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getCnpj() {
@@ -86,5 +87,13 @@ public class Empresa {
         this.email = email;
     }
 
+    
+    public String getAtividade(){
+    return atividade;
+    }
+    
+    public void setAtividade(String atividade){
+    this.atividade = atividade;
+    }
     
 }
