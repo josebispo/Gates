@@ -1,5 +1,5 @@
 
-package gui;
+package Telas;
 
 import LeitorCSV.LeitorCsv;
 import java.io.File;

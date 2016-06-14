@@ -1,7 +1,7 @@
 
 package LeitorCSV;
 
-import gui.SeletorGUI;
+import Telas.SeletorGUI;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -116,18 +116,6 @@ public class LeitorCsv {
         indicadores2015.setRentabilidadePL(i2015.getLucroliquido()/i2015.getPatrimonioliquido());
         System.out.println(indicadores2015); 
 //=======
-//        leitor = new BufferedReader(new FileReader(arquivoCSV));     
-//        while ((linha= leitor.readLine()) != null) {
-// 
-//            String[] pais = linha.split(csvDivisor);
-//            for (int i=0; i<4; i++){
-//               if (pais[i].equals("Passivo Total")){
-//                    System.out.println(pais[pais.length-2] + " " + pais[pais.length-1]);}
-
-             
-              //if ((pais[pais.length-2]).equals("Passivo Total")){                                 
-  
-              
 //>>>>>>> 8c41fd30e69538602f4ebbe47b3b1c425cc064b6
 
     } catch (FileNotFoundException e) {
