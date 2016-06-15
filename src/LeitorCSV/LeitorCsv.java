@@ -117,7 +117,7 @@ public class LeitorCsv {
         indicadores2015.setMargemliquida((i2015.getLucroliquido()/i2015.getVendaliquida())*100);
         indicadores2015.setRentabilidadedoativo((i2015.getLucroliquido()/i2015.getAtivototal())*100);
         indicadores2015.setRentabilidadePL(i2015.getLucroliquido()/i2015.getPatrimonioliquido());
-        System.out.println(indicadores2015); 
+       
         
       
         JSONObject empinfo = new JSONObject();
