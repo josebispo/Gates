@@ -122,8 +122,9 @@ public class LeitorCsv {
       
         JSONObject empinfo = new JSONObject();
         FileWriter writeFile = null;
+       
    
-		empinfo.put("Endividamento",indicadores2015.getEndividamento() );
+		empinfo.put("Endividamento",indicadores2015.getEndividamento());                
 		empinfo.put("Composicao do endividamento", indicadores2015.getComposicaoendividamento());
 		empinfo.put("Imobilizacao", indicadores2015.getImobilizacaoPL());
 		empinfo.put("Liquidez Geral", indicadores2015.getLiquidezgeral());
@@ -139,6 +140,8 @@ public class LeitorCsv {
 		try{
 			writeFile = new FileWriter("infoemp.json");
 			
+                       
+                        
 			writeFile.write(JSONObject.valueToString(empinfo));
 			writeFile.close();
 		}
