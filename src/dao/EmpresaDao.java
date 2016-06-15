@@ -5,6 +5,7 @@ import Telas.Empresa;
 import Telas.EmpresaGUI;
 import java.sql.*; 
 import java.sql.PreparedStatement;
+import javax.swing.JOptionPane;
 
 
 
@@ -54,6 +55,7 @@ public class EmpresaDao {
         tela.setVisible(false);
         stmt.close();
         } catch (SQLException u) { throw new RuntimeException(u);
+
         }
     }
 
