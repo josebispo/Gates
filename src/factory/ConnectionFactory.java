@@ -7,6 +7,7 @@ package factory;
     import java.sql.SQLException; // classe para tratamento de exceções 
 
 public class ConnectionFactory {
+    
 
    
     public Connection getConnection() {         
