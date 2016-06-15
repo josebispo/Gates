@@ -28,8 +28,6 @@ public class SeletorGUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        text.setText("jTextField1");
-
         procurar.setText("Procurar");
         procurar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

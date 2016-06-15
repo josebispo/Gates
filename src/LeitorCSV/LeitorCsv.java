@@ -6,8 +6,11 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.LineNumberReader;
+import JSONmaster.JSONObject;
+
 
 
 public class LeitorCsv {      
@@ -115,6 +118,36 @@ public class LeitorCsv {
         indicadores2015.setRentabilidadedoativo((i2015.getLucroliquido()/i2015.getAtivototal())*100);
         indicadores2015.setRentabilidadePL(i2015.getLucroliquido()/i2015.getPatrimonioliquido());
         System.out.println(indicadores2015); 
+        
+      
+        JSONObject empinfo = new JSONObject();
+        FileWriter writeFile = null;
+   
+		empinfo.put("Endividamento",indicadores2015.getEndividamento() );
+		empinfo.put("Composicao do endividamento", indicadores2015.getComposicaoendividamento());
+		empinfo.put("Imobilizacao", indicadores2015.getImobilizacaoPL());
+		empinfo.put("Liquidez Geral", indicadores2015.getLiquidezgeral());
+		empinfo.put("Liquidez Corrente", indicadores2015.getLiqcorrente());
+                empinfo.put("Capital Circular Liquido", indicadores2015.getCapcircliq());
+                empinfo.put("Liquidez Seca", indicadores2015.getLiqseca());
+                empinfo.put("Liquidez Imediata", indicadores2015.getLiqimediata());
+                empinfo.put("Giro do Ativo", indicadores2015.getGirodoativo());
+                empinfo.put("Margem Liquida", indicadores2015.getMargemliquida());
+                empinfo.put("Rentabilidade do Ativo", indicadores2015.getRentabilidadedoativo());
+                empinfo.put("Rentabilidade", indicadores2015.getRentabilidadePL());
+
+		try{
+			writeFile = new FileWriter("infoemp.json");
+			
+			writeFile.write(JSONObject.valueToString(empinfo));
+			writeFile.close();
+		}
+		catch(IOException e){
+			e.printStackTrace();
+		}
+		
+		
+		System.out.println(empinfo);
 //=======
 //>>>>>>> 8c41fd30e69538602f4ebbe47b3b1c425cc064b6
 
