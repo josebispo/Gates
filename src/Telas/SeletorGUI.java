@@ -12,6 +12,7 @@ import javax.swing.JFileChooser;
 public class SeletorGUI extends javax.swing.JFrame {
 
     public static String leitor;
+    public static String nome_arq;
     
     public  SeletorGUI() {
         initComponents();
@@ -84,6 +85,7 @@ public class SeletorGUI extends javax.swing.JFrame {
            text.setText(arquivo.getAbsolutePath());
 
         SeletorGUI.leitor=(arquivo.getAbsolutePath());
+        SeletorGUI.nome_arq=(arquivo.getName());
             try {
                 LeitorCsv.Leitor();
                 //System.out.println(LeitorCsv.arquivoCSV);  

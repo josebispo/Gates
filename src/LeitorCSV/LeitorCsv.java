@@ -40,16 +40,16 @@ public class LeitorCsv {
 
 //<<<<<<< HEAD
         leitor = new BufferedReader(new FileReader(arquivoCSV)); 
-        
-        String[][] indices = new String [qtdlinhas][4];
+        String[] coluna = null;
+        String[][] indices = new String [qtdlinhas][10];
         for (int i=0; i<qtdlinhas; i++)
-                for (int j=0; j<4; j++)                   
+                for (int j=0; j<10; j++)                   
                     indices[i][j]="0";                   
                                 
         int cont = 0;        
         while (((linha= leitor.readLine()) != null)&&(cont<qtdlinhas)) {
-        String[] coluna = linha.split(csvDivisor,-1); 
-                for (int j=0; j<4; j++){
+                coluna = linha.split(csvDivisor,-1); 
+                for (int j=0; j<coluna.length; j++){
                     if (!"".equals(coluna[j]))                        
                         indices[cont][j]= coluna[j];                    
                 }
@@ -57,46 +57,193 @@ public class LeitorCsv {
         }
         
         for (int i=0; i<qtdlinhas; i++)
-                for (int j=2; j<4; j++){                  
+                for (int j=2; j<coluna.length; j++){                  
                     indices[i][j]=indices[i][j].replaceAll("\\.","");
                     
                 }
-//        for (int i=0; i<qtdlinhas; i++){
-//                for (int j=0; j<4; j++){  
-//                    
-//                    System.out.print(indices[i][j]+" , " );
-//                }
-//                System.out.println();
-//        }
+        for (int i=0; i<qtdlinhas; i++){
+                for (int j=0; j<coluna.length; j++){  
+                    
+                    System.out.print(indices[i][j]+" , " );
+                }
+                System.out.println();
+        }
         
         Indices i2015 = new Indices(0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f);
+        Indices i2014 = new Indices(0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f);
+        Indices i2013 = new Indices(0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f);
+        Indices i2012 = new Indices(0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f);
+        Indices i2011 = new Indices(0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f);
         for (int i=0;i<qtdlinhas;i++){
-            if ((indices[i][1]).equals("Ativo Total"))
+            if ((indices[i][1]).equals("Ativo Total")){
                 i2015.setAtivototal(Float.valueOf(indices[i][2])*1000);
-            if ((indices[i][1]).equals("Ativo Circulante"))
+                if (!"0".equals(indices[i][3]))
+                    i2014.setAtivototal(Float.valueOf(indices[i][3])*1000);
+                if (!"0".equals(indices[i][4]))
+                    i2013.setAtivototal(Float.valueOf(indices[i][4])*1000);
+                if (!"0".equals(indices[i][5]))
+                    i2012.setAtivototal(Float.valueOf(indices[i][5])*1000);
+                if (!"0".equals(indices[i][6]))
+                    i2012.setAtivototal(Float.valueOf(indices[i][6])*1000);
+                if (!"0".equals(indices[i][7]))
+                    i2011.setAtivototal(Float.valueOf(indices[i][7])*1000);                
+                }
+            if ((indices[i][1]).equals("Ativo Circulante")){
                 i2015.setAtivocirculante(Float.valueOf(indices[i][2])*1000);
-            if ((indices[i][1]).equals("Passivo Circulante"))
+                if (!"0".equals(indices[i][3]))
+                    i2014.setAtivocirculante(Float.valueOf(indices[i][3])*1000);
+                if (!"0".equals(indices[i][4]))
+                    i2013.setAtivocirculante(Float.valueOf(indices[i][4])*1000);
+                if (!"0".equals(indices[i][5]))
+                    i2012.setAtivocirculante(Float.valueOf(indices[i][5])*1000);
+                if (!"0".equals(indices[i][6]))
+                    i2012.setAtivocirculante(Float.valueOf(indices[i][6])*1000);
+                if (!"0".equals(indices[i][7]))
+                    i2011.setAtivocirculante(Float.valueOf(indices[i][7])*1000);                
+                }
+            if ((indices[i][1]).equals("Passivo Circulante")){
                 i2015.setPassivocirculante(Float.valueOf(indices[i][2])*1000);
-            if ((indices[i][1]).equals("Imobilizado"))
+                if (!"0".equals(indices[i][3]))
+                    i2014.setPassivocirculante(Float.valueOf(indices[i][3])*1000);
+                if (!"0".equals(indices[i][4]))
+                    i2013.setPassivocirculante(Float.valueOf(indices[i][4])*1000);
+                if (!"0".equals(indices[i][5]))
+                    i2012.setPassivocirculante(Float.valueOf(indices[i][5])*1000);
+                if (!"0".equals(indices[i][6]))
+                    i2012.setPassivocirculante(Float.valueOf(indices[i][6])*1000);
+                if (!"0".equals(indices[i][7]))
+                    i2011.setPassivocirculante(Float.valueOf(indices[i][7])*1000);                
+                }
+            if ((indices[i][1]).equals("Imobilizado")){
                 i2015.setImobilizado(Float.valueOf(indices[i][2])*1000);
-            if ((indices[i][1]).equals("Intangivel"))
+                if (!"0".equals(indices[i][3]))
+                    i2014.setImobilizado(Float.valueOf(indices[i][3])*1000);
+                if (!"0".equals(indices[i][4]))
+                    i2013.setImobilizado(Float.valueOf(indices[i][4])*1000);
+                if (!"0".equals(indices[i][5]))
+                    i2012.setImobilizado(Float.valueOf(indices[i][5])*1000);
+                if (!"0".equals(indices[i][6]))
+                    i2012.setImobilizado(Float.valueOf(indices[i][6])*1000);
+                if (!"0".equals(indices[i][7]))
+                    i2011.setImobilizado(Float.valueOf(indices[i][7])*1000);                
+                }
+            if ((indices[i][1]).equals("Intangivel")){
                 i2015.setIntangivel(Float.valueOf(indices[i][2])*1000);
-            if ((indices[i][1]).equals("Ativo Realizável a Longo Prazo"))
+                if (!"0".equals(indices[i][3]))
+                    i2014.setIntangivel(Float.valueOf(indices[i][3])*1000);
+                if (!"0".equals(indices[i][4]))
+                    i2013.setIntangivel(Float.valueOf(indices[i][4])*1000);
+                if (!"0".equals(indices[i][5]))
+                    i2012.setIntangivel(Float.valueOf(indices[i][5])*1000);
+                if (!"0".equals(indices[i][6]))
+                    i2012.setIntangivel(Float.valueOf(indices[i][6])*1000);
+                if (!"0".equals(indices[i][7]))
+                    i2011.setIntangivel(Float.valueOf(indices[i][7])*1000);                
+                }
+            if ((indices[i][1]).equals("Ativo Realizável a Longo Prazo")){
                 i2015.setRealizavellongoprazo(Float.valueOf(indices[i][2])*1000);
-            if ((indices[i][1]).equals("Estoques"))
+                if (!"0".equals(indices[i][3]))
+                    i2014.setRealizavellongoprazo(Float.valueOf(indices[i][3])*1000);
+                if (!"0".equals(indices[i][4]))
+                    i2013.setRealizavellongoprazo(Float.valueOf(indices[i][4])*1000);
+                if (!"0".equals(indices[i][5]))
+                    i2012.setRealizavellongoprazo(Float.valueOf(indices[i][5])*1000);
+                if (!"0".equals(indices[i][6]))
+                    i2012.setRealizavellongoprazo(Float.valueOf(indices[i][6])*1000);
+                if (!"0".equals(indices[i][7]))
+                    i2011.setRealizavellongoprazo(Float.valueOf(indices[i][7])*1000);                
+                }
+            if ((indices[i][1]).equals("Estoques")){
                 i2015.setEstoques(Float.valueOf(indices[i][2])*1000);
-            if ((indices[i][1]).equals("Passivo Circulante"))
+                if (!"0".equals(indices[i][3]))
+                    i2014.setEstoques(Float.valueOf(indices[i][3])*1000);
+                if (!"0".equals(indices[i][4]))
+                    i2013.setEstoques(Float.valueOf(indices[i][4])*1000);
+                if (!"0".equals(indices[i][5]))
+                    i2012.setEstoques(Float.valueOf(indices[i][5])*1000);
+                if (!"0".equals(indices[i][6]))
+                    i2012.setEstoques(Float.valueOf(indices[i][6])*1000);
+                if (!"0".equals(indices[i][7]))
+                    i2011.setEstoques(Float.valueOf(indices[i][7])*1000);                
+                }
+            if ((indices[i][1]).equals("Passivo Circulante")){
                 i2015.setPassivocirculante(Float.valueOf(indices[i][2])*1000);
-            if ((indices[i][1]).equals("Passivo Não Circulante"))
+                if (!"0".equals(indices[i][3]))
+                    i2014.setPassivocirculante(Float.valueOf(indices[i][3])*1000);
+                if (!"0".equals(indices[i][4]))
+                    i2013.setPassivocirculante(Float.valueOf(indices[i][4])*1000);
+                if (!"0".equals(indices[i][5]))
+                    i2012.setPassivocirculante(Float.valueOf(indices[i][5])*1000);
+                if (!"0".equals(indices[i][6]))
+                    i2012.setPassivocirculante(Float.valueOf(indices[i][6])*1000);
+                if (!"0".equals(indices[i][7]))
+                    i2011.setPassivocirculante(Float.valueOf(indices[i][7])*1000);                
+                }
+            if ((indices[i][1]).equals("Passivo Não Circulante")){
                 i2015.setPassivonaocirculante(Float.valueOf(indices[i][2])*1000);
-            if ((indices[i][1]).equals("Patrimônio Líquido Consolidado"))
+                if (!"0".equals(indices[i][3]))
+                    i2014.setPassivonaocirculante(Float.valueOf(indices[i][3])*1000);
+                if (!"0".equals(indices[i][4]))
+                    i2013.setPassivonaocirculante(Float.valueOf(indices[i][4])*1000);
+                if (!"0".equals(indices[i][5]))
+                    i2012.setPassivonaocirculante(Float.valueOf(indices[i][5])*1000);
+                if (!"0".equals(indices[i][6]))
+                    i2012.setPassivonaocirculante(Float.valueOf(indices[i][6])*1000);
+                if (!"0".equals(indices[i][7]))
+                    i2011.setPassivonaocirculante(Float.valueOf(indices[i][7])*1000);                
+                }
+            if ((indices[i][1]).equals("Patrimônio Líquido Consolidado")){
                 i2015.setPatrimonioliquido(Float.valueOf(indices[i][2])*1000);
-            if ((indices[i][1]).equals("Receita de Venda de Bens e/ou Serviços"))
+                if (!"0".equals(indices[i][3]))
+                    i2014.setPatrimonioliquido(Float.valueOf(indices[i][3])*1000);
+                if (!"0".equals(indices[i][4]))
+                    i2013.setPatrimonioliquido(Float.valueOf(indices[i][4])*1000);
+                if (!"0".equals(indices[i][5]))
+                    i2012.setPatrimonioliquido(Float.valueOf(indices[i][5])*1000);
+                if (!"0".equals(indices[i][6]))
+                    i2012.setPatrimonioliquido(Float.valueOf(indices[i][6])*1000);
+                if (!"0".equals(indices[i][7]))
+                    i2011.setPatrimonioliquido(Float.valueOf(indices[i][7])*1000);                
+                }
+            if ((indices[i][1]).equals("Receita de Venda de Bens e/ou Serviços")){
                 i2015.setVendaliquida(Float.valueOf(indices[i][2])*1000);
-            if ((indices[i][1]).equals("Lucro/Prejuízo Consolidado do Período"))
+                if (!"0".equals(indices[i][3]))
+                    i2014.setVendaliquida(Float.valueOf(indices[i][3])*1000);
+                if (!"0".equals(indices[i][4]))
+                    i2013.setVendaliquida(Float.valueOf(indices[i][4])*1000);
+                if (!"0".equals(indices[i][5]))
+                    i2012.setVendaliquida(Float.valueOf(indices[i][5])*1000);
+                if (!"0".equals(indices[i][6]))
+                    i2012.setVendaliquida(Float.valueOf(indices[i][6])*1000);
+                if (!"0".equals(indices[i][7]))
+                    i2011.setVendaliquida(Float.valueOf(indices[i][7])*1000);                
+                }
+            if ((indices[i][1]).equals("Lucro/Prejuízo Consolidado do Período")){
                 i2015.setLucroliquido(Float.valueOf(indices[i][2])*1000);
-            if ((indices[i][1]).equals("Caixa e Equivalentes de Caixa"))
+                if (!"0".equals(indices[i][3]))
+                    i2014.setLucroliquido(Float.valueOf(indices[i][3])*1000);
+                if (!"0".equals(indices[i][4]))
+                    i2013.setLucroliquido(Float.valueOf(indices[i][4])*1000);
+                if (!"0".equals(indices[i][5]))
+                    i2012.setLucroliquido(Float.valueOf(indices[i][5])*1000);
+                if (!"0".equals(indices[i][6]))
+                    i2012.setLucroliquido(Float.valueOf(indices[i][6])*1000);
+                if (!"0".equals(indices[i][7]))
+                    i2011.setLucroliquido(Float.valueOf(indices[i][7])*1000);                
+                }
+            if ((indices[i][1]).equals("Caixa e Equivalentes de Caixa")){
                 i2015.setDisponivel(Float.valueOf(indices[i][2])*1000);
+                if (!"0".equals(indices[i][3]))
+                    i2014.setDisponivel(Float.valueOf(indices[i][3])*1000);
+                if (!"0".equals(indices[i][4]))
+                    i2013.setDisponivel(Float.valueOf(indices[i][4])*1000);
+                if (!"0".equals(indices[i][5]))
+                    i2012.setDisponivel(Float.valueOf(indices[i][5])*1000);
+                if (!"0".equals(indices[i][6]))
+                    i2012.setDisponivel(Float.valueOf(indices[i][6])*1000);
+                if (!"0".equals(indices[i][7]))
+                    i2011.setDisponivel(Float.valueOf(indices[i][7])*1000);                
+                }
     }
         
         System.out.println("Ativo Total 2015: "+i2015.getAtivototal());
@@ -117,28 +264,81 @@ public class LeitorCsv {
         indicadores2015.setMargemliquida((i2015.getLucroliquido()/i2015.getVendaliquida())*100);
         indicadores2015.setRentabilidadedoativo((i2015.getLucroliquido()/i2015.getAtivototal())*100);
         indicadores2015.setRentabilidadePL(i2015.getLucroliquido()/i2015.getPatrimonioliquido());
-       
+        
+        Indicadores indicadores2014 = new Indicadores();
+        indicadores2014.setEndividamento((i2014.getPassivocirculante()+i2014.getPassivonaocirculante())/i2014.getPatrimonioliquido());
+        indicadores2014.setComposicaoendividamento((i2014.getPassivocirculante()*100)/(i2014.getPassivocirculante()+i2014.getPassivonaocirculante()));
+        indicadores2014.setImobilizacaoPL(((i2014.getImobilizado()+i2014.getIntangivel())/i2014.getPatrimonioliquido())*100);
+        indicadores2014.setLiquidezgeral((i2014.getAtivocirculante()+i2014.getRealizavellongoprazo())/(i2014.getPassivocirculante()+i2014.getPassivonaocirculante()));
+        indicadores2014.setLiqcorrente(i2014.getAtivocirculante()/i2014.getPassivocirculante());
+        indicadores2014.setCapcircliq(i2014.getAtivocirculante()-i2014.getPassivocirculante());
+        indicadores2014.setLiqseca((i2014.getAtivocirculante()+i2014.getEstoques())/i2014.getPassivocirculante());
+        indicadores2014.setLiqimediata(i2014.getDisponivel()/i2014.getPassivocirculante());        
+        indicadores2014.setGirodoativo(i2014.getVendaliquida()/i2014.getAtivototal());
+        indicadores2014.setMargemliquida((i2014.getLucroliquido()/i2014.getVendaliquida())*100);
+        indicadores2014.setRentabilidadedoativo((i2014.getLucroliquido()/i2014.getAtivototal())*100);
+        indicadores2014.setRentabilidadePL(i2014.getLucroliquido()/i2014.getPatrimonioliquido());
+        
+        Indicadores indicadores2013 = new Indicadores();
+        if ((i2013.getAtivototal())!=0){
+        indicadores2013.setEndividamento((i2013.getPassivocirculante()+i2013.getPassivonaocirculante())/i2013.getPatrimonioliquido());
+        indicadores2013.setComposicaoendividamento((i2013.getPassivocirculante()*100)/(i2013.getPassivocirculante()+i2013.getPassivonaocirculante()));
+        indicadores2013.setImobilizacaoPL(((i2013.getImobilizado()+i2013.getIntangivel())/i2013.getPatrimonioliquido())*100);
+        indicadores2013.setLiquidezgeral((i2013.getAtivocirculante()+i2013.getRealizavellongoprazo())/(i2013.getPassivocirculante()+i2013.getPassivonaocirculante()));
+        indicadores2013.setLiqcorrente(i2013.getAtivocirculante()/i2013.getPassivocirculante());
+        indicadores2013.setCapcircliq(i2013.getAtivocirculante()-i2013.getPassivocirculante());
+        indicadores2013.setLiqseca((i2013.getAtivocirculante()+i2013.getEstoques())/i2013.getPassivocirculante());
+        indicadores2013.setLiqimediata(i2013.getDisponivel()/i2013.getPassivocirculante());        
+        indicadores2013.setGirodoativo(i2013.getVendaliquida()/i2013.getAtivototal());
+        indicadores2013.setMargemliquida((i2013.getLucroliquido()/i2013.getVendaliquida())*100);
+        indicadores2013.setRentabilidadedoativo((i2013.getLucroliquido()/i2013.getAtivototal())*100);
+        indicadores2013.setRentabilidadePL(i2013.getLucroliquido()/i2013.getPatrimonioliquido());
+        }
         
       
         JSONObject empinfo = new JSONObject();
         FileWriter writeFile = null;
        
    
-		empinfo.put("Endividamento",indicadores2015.getEndividamento());                
-		empinfo.put("Composicao do endividamento", indicadores2015.getComposicaoendividamento());
-		empinfo.put("Imobilizacao", indicadores2015.getImobilizacaoPL());
-		empinfo.put("Liquidez Geral", indicadores2015.getLiquidezgeral());
-		empinfo.put("Liquidez Corrente", indicadores2015.getLiqcorrente());
-                empinfo.put("Capital Circular Liquido", indicadores2015.getCapcircliq());
-                empinfo.put("Liquidez Seca", indicadores2015.getLiqseca());
-                empinfo.put("Liquidez Imediata", indicadores2015.getLiqimediata());
-                empinfo.put("Giro do Ativo", indicadores2015.getGirodoativo());
-                empinfo.put("Margem Liquida", indicadores2015.getMargemliquida());
-                empinfo.put("Rentabilidade do Ativo", indicadores2015.getRentabilidadedoativo());
-                empinfo.put("Rentabilidade", indicadores2015.getRentabilidadePL());
+		empinfo.put("Endividamento 2015",indicadores2015.getEndividamento());
+                empinfo.put("Endividamento 2014",indicadores2014.getEndividamento());
+                empinfo.put("Endividamento 2013",indicadores2013.getEndividamento());
+		empinfo.put("Composicao do endividamento 2015", indicadores2015.getComposicaoendividamento());
+                empinfo.put("Composicao do endividamento 2014", indicadores2014.getComposicaoendividamento());
+                empinfo.put("Composicao do endividamento 2013", indicadores2013.getComposicaoendividamento());
+		empinfo.put("Imobilizacao 2015", indicadores2015.getImobilizacaoPL());
+                empinfo.put("Imobilizacao 2014", indicadores2014.getImobilizacaoPL());
+                empinfo.put("Imobilizacao 2013", indicadores2013.getImobilizacaoPL());
+		empinfo.put("Liquidez Geral 2015", indicadores2015.getLiquidezgeral());
+                empinfo.put("Liquidez Geral 2014", indicadores2014.getLiquidezgeral());
+                empinfo.put("Liquidez Geral 2013", indicadores2013.getLiquidezgeral());
+		empinfo.put("Liquidez Corrente 2015", indicadores2015.getLiqcorrente());
+                empinfo.put("Liquidez Corrente 2014", indicadores2014.getLiqcorrente());
+                empinfo.put("Liquidez Corrente 2013", indicadores2013.getLiqcorrente());
+                empinfo.put("Capital Circular Liquido 2015", indicadores2015.getCapcircliq());
+                empinfo.put("Capital Circular Liquido 2014", indicadores2014.getCapcircliq());
+                empinfo.put("Capital Circular Liquido 2013", indicadores2013.getCapcircliq());
+                empinfo.put("Liquidez Seca 2015", indicadores2015.getLiqseca());
+                empinfo.put("Liquidez Seca 2014", indicadores2014.getLiqseca());
+                empinfo.put("Liquidez Seca 2013", indicadores2013.getLiqseca());
+                empinfo.put("Liquidez Imediata 2015", indicadores2015.getLiqimediata());
+                empinfo.put("Liquidez Imediata 2014", indicadores2014.getLiqimediata());
+                empinfo.put("Liquidez Imediata 2013", indicadores2013.getLiqimediata());
+                empinfo.put("Giro do Ativo 2015", indicadores2015.getGirodoativo());
+                empinfo.put("Giro do Ativo 2014", indicadores2014.getGirodoativo());
+                empinfo.put("Giro do Ativo 2013", indicadores2013.getGirodoativo());
+                empinfo.put("Margem Liquida 2015", indicadores2015.getMargemliquida());
+                empinfo.put("Margem Liquida 2014", indicadores2014.getMargemliquida());
+                empinfo.put("Margem Liquida 2013", indicadores2013.getMargemliquida());
+                empinfo.put("Rentabilidade do Ativo 2015", indicadores2015.getRentabilidadedoativo());
+                empinfo.put("Rentabilidade do Ativo 2014", indicadores2014.getRentabilidadedoativo());
+                empinfo.put("Rentabilidade do Ativo 2013", indicadores2013.getRentabilidadedoativo());
+                empinfo.put("Rentabilidade 2015", indicadores2015.getRentabilidadePL());
+                empinfo.put("Rentabilidade 2014", indicadores2014.getRentabilidadePL());
+                empinfo.put("Rentabilidade 2013", indicadores2013.getRentabilidadePL());
 
 		try{
-			writeFile = new FileWriter("infoemp.json");
+			writeFile = new FileWriter(SeletorGUI.nome_arq+".json");
 			
                        
                         
