@@ -1,6 +1,5 @@
 package JSONmaster;
 
-import JSONmaster.JSONObject;
 import java.io.IOException;
 import java.io.Writer;
 

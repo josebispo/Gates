@@ -38,7 +38,6 @@ public class LeitorCsv {
     
     try {
 
-//<<<<<<< HEAD
         leitor = new BufferedReader(new FileReader(arquivoCSV)); 
         String[] coluna = null;
         String[][] indices = new String [qtdlinhas][10];
@@ -74,6 +73,7 @@ public class LeitorCsv {
         Indices i2013 = new Indices(0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f);
         Indices i2012 = new Indices(0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f);
         Indices i2011 = new Indices(0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f);
+        Indices i2010 = new Indices(0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f);
         for (int i=0;i<qtdlinhas;i++){
             if ((indices[i][1]).equals("Ativo Total")){
                 i2015.setAtivototal(Float.valueOf(indices[i][2])*1000);
@@ -84,9 +84,9 @@ public class LeitorCsv {
                 if (!"0".equals(indices[i][5]))
                     i2012.setAtivototal(Float.valueOf(indices[i][5])*1000);
                 if (!"0".equals(indices[i][6]))
-                    i2012.setAtivototal(Float.valueOf(indices[i][6])*1000);
+                    i2011.setAtivototal(Float.valueOf(indices[i][6])*1000);
                 if (!"0".equals(indices[i][7]))
-                    i2011.setAtivototal(Float.valueOf(indices[i][7])*1000);                
+                    i2010.setAtivototal(Float.valueOf(indices[i][7])*1000);                
                 }
             if ((indices[i][1]).equals("Ativo Circulante")){
                 i2015.setAtivocirculante(Float.valueOf(indices[i][2])*1000);
@@ -97,9 +97,9 @@ public class LeitorCsv {
                 if (!"0".equals(indices[i][5]))
                     i2012.setAtivocirculante(Float.valueOf(indices[i][5])*1000);
                 if (!"0".equals(indices[i][6]))
-                    i2012.setAtivocirculante(Float.valueOf(indices[i][6])*1000);
+                    i2011.setAtivocirculante(Float.valueOf(indices[i][6])*1000);
                 if (!"0".equals(indices[i][7]))
-                    i2011.setAtivocirculante(Float.valueOf(indices[i][7])*1000);                
+                    i2010.setAtivocirculante(Float.valueOf(indices[i][7])*1000);                
                 }
             if ((indices[i][1]).equals("Passivo Circulante")){
                 i2015.setPassivocirculante(Float.valueOf(indices[i][2])*1000);
@@ -110,9 +110,9 @@ public class LeitorCsv {
                 if (!"0".equals(indices[i][5]))
                     i2012.setPassivocirculante(Float.valueOf(indices[i][5])*1000);
                 if (!"0".equals(indices[i][6]))
-                    i2012.setPassivocirculante(Float.valueOf(indices[i][6])*1000);
+                    i2011.setPassivocirculante(Float.valueOf(indices[i][6])*1000);
                 if (!"0".equals(indices[i][7]))
-                    i2011.setPassivocirculante(Float.valueOf(indices[i][7])*1000);                
+                    i2010.setPassivocirculante(Float.valueOf(indices[i][7])*1000);                
                 }
             if ((indices[i][1]).equals("Imobilizado")){
                 i2015.setImobilizado(Float.valueOf(indices[i][2])*1000);
@@ -123,9 +123,9 @@ public class LeitorCsv {
                 if (!"0".equals(indices[i][5]))
                     i2012.setImobilizado(Float.valueOf(indices[i][5])*1000);
                 if (!"0".equals(indices[i][6]))
-                    i2012.setImobilizado(Float.valueOf(indices[i][6])*1000);
+                    i2011.setImobilizado(Float.valueOf(indices[i][6])*1000);
                 if (!"0".equals(indices[i][7]))
-                    i2011.setImobilizado(Float.valueOf(indices[i][7])*1000);                
+                    i2010.setImobilizado(Float.valueOf(indices[i][7])*1000);                
                 }
             if ((indices[i][1]).equals("Intangivel")){
                 i2015.setIntangivel(Float.valueOf(indices[i][2])*1000);
@@ -136,9 +136,9 @@ public class LeitorCsv {
                 if (!"0".equals(indices[i][5]))
                     i2012.setIntangivel(Float.valueOf(indices[i][5])*1000);
                 if (!"0".equals(indices[i][6]))
-                    i2012.setIntangivel(Float.valueOf(indices[i][6])*1000);
+                    i2011.setIntangivel(Float.valueOf(indices[i][6])*1000);
                 if (!"0".equals(indices[i][7]))
-                    i2011.setIntangivel(Float.valueOf(indices[i][7])*1000);                
+                    i2010.setIntangivel(Float.valueOf(indices[i][7])*1000);                
                 }
             if ((indices[i][1]).equals("Ativo Realizável a Longo Prazo")){
                 i2015.setRealizavellongoprazo(Float.valueOf(indices[i][2])*1000);
@@ -149,9 +149,9 @@ public class LeitorCsv {
                 if (!"0".equals(indices[i][5]))
                     i2012.setRealizavellongoprazo(Float.valueOf(indices[i][5])*1000);
                 if (!"0".equals(indices[i][6]))
-                    i2012.setRealizavellongoprazo(Float.valueOf(indices[i][6])*1000);
+                    i2011.setRealizavellongoprazo(Float.valueOf(indices[i][6])*1000);
                 if (!"0".equals(indices[i][7]))
-                    i2011.setRealizavellongoprazo(Float.valueOf(indices[i][7])*1000);                
+                    i2010.setRealizavellongoprazo(Float.valueOf(indices[i][7])*1000);                
                 }
             if ((indices[i][1]).equals("Estoques")){
                 i2015.setEstoques(Float.valueOf(indices[i][2])*1000);
@@ -162,9 +162,9 @@ public class LeitorCsv {
                 if (!"0".equals(indices[i][5]))
                     i2012.setEstoques(Float.valueOf(indices[i][5])*1000);
                 if (!"0".equals(indices[i][6]))
-                    i2012.setEstoques(Float.valueOf(indices[i][6])*1000);
+                    i2011.setEstoques(Float.valueOf(indices[i][6])*1000);
                 if (!"0".equals(indices[i][7]))
-                    i2011.setEstoques(Float.valueOf(indices[i][7])*1000);                
+                    i2010.setEstoques(Float.valueOf(indices[i][7])*1000);                
                 }
             if ((indices[i][1]).equals("Passivo Circulante")){
                 i2015.setPassivocirculante(Float.valueOf(indices[i][2])*1000);
@@ -175,9 +175,9 @@ public class LeitorCsv {
                 if (!"0".equals(indices[i][5]))
                     i2012.setPassivocirculante(Float.valueOf(indices[i][5])*1000);
                 if (!"0".equals(indices[i][6]))
-                    i2012.setPassivocirculante(Float.valueOf(indices[i][6])*1000);
+                    i2011.setPassivocirculante(Float.valueOf(indices[i][6])*1000);
                 if (!"0".equals(indices[i][7]))
-                    i2011.setPassivocirculante(Float.valueOf(indices[i][7])*1000);                
+                    i2010.setPassivocirculante(Float.valueOf(indices[i][7])*1000);                
                 }
             if ((indices[i][1]).equals("Passivo Não Circulante")){
                 i2015.setPassivonaocirculante(Float.valueOf(indices[i][2])*1000);
@@ -188,9 +188,9 @@ public class LeitorCsv {
                 if (!"0".equals(indices[i][5]))
                     i2012.setPassivonaocirculante(Float.valueOf(indices[i][5])*1000);
                 if (!"0".equals(indices[i][6]))
-                    i2012.setPassivonaocirculante(Float.valueOf(indices[i][6])*1000);
+                    i2011.setPassivonaocirculante(Float.valueOf(indices[i][6])*1000);
                 if (!"0".equals(indices[i][7]))
-                    i2011.setPassivonaocirculante(Float.valueOf(indices[i][7])*1000);                
+                    i2010.setPassivonaocirculante(Float.valueOf(indices[i][7])*1000);                
                 }
             if ((indices[i][1]).equals("Patrimônio Líquido Consolidado")){
                 i2015.setPatrimonioliquido(Float.valueOf(indices[i][2])*1000);
@@ -201,9 +201,9 @@ public class LeitorCsv {
                 if (!"0".equals(indices[i][5]))
                     i2012.setPatrimonioliquido(Float.valueOf(indices[i][5])*1000);
                 if (!"0".equals(indices[i][6]))
-                    i2012.setPatrimonioliquido(Float.valueOf(indices[i][6])*1000);
+                    i2011.setPatrimonioliquido(Float.valueOf(indices[i][6])*1000);
                 if (!"0".equals(indices[i][7]))
-                    i2011.setPatrimonioliquido(Float.valueOf(indices[i][7])*1000);                
+                    i2010.setPatrimonioliquido(Float.valueOf(indices[i][7])*1000);                
                 }
             if ((indices[i][1]).equals("Receita de Venda de Bens e/ou Serviços")){
                 i2015.setVendaliquida(Float.valueOf(indices[i][2])*1000);
@@ -214,9 +214,9 @@ public class LeitorCsv {
                 if (!"0".equals(indices[i][5]))
                     i2012.setVendaliquida(Float.valueOf(indices[i][5])*1000);
                 if (!"0".equals(indices[i][6]))
-                    i2012.setVendaliquida(Float.valueOf(indices[i][6])*1000);
+                    i2011.setVendaliquida(Float.valueOf(indices[i][6])*1000);
                 if (!"0".equals(indices[i][7]))
-                    i2011.setVendaliquida(Float.valueOf(indices[i][7])*1000);                
+                    i2010.setVendaliquida(Float.valueOf(indices[i][7])*1000);                
                 }
             if ((indices[i][1]).equals("Lucro/Prejuízo Consolidado do Período")){
                 i2015.setLucroliquido(Float.valueOf(indices[i][2])*1000);
@@ -227,9 +227,9 @@ public class LeitorCsv {
                 if (!"0".equals(indices[i][5]))
                     i2012.setLucroliquido(Float.valueOf(indices[i][5])*1000);
                 if (!"0".equals(indices[i][6]))
-                    i2012.setLucroliquido(Float.valueOf(indices[i][6])*1000);
+                    i2011.setLucroliquido(Float.valueOf(indices[i][6])*1000);
                 if (!"0".equals(indices[i][7]))
-                    i2011.setLucroliquido(Float.valueOf(indices[i][7])*1000);                
+                    i2010.setLucroliquido(Float.valueOf(indices[i][7])*1000);                
                 }
             if ((indices[i][1]).equals("Caixa e Equivalentes de Caixa")){
                 i2015.setDisponivel(Float.valueOf(indices[i][2])*1000);
@@ -240,9 +240,9 @@ public class LeitorCsv {
                 if (!"0".equals(indices[i][5]))
                     i2012.setDisponivel(Float.valueOf(indices[i][5])*1000);
                 if (!"0".equals(indices[i][6]))
-                    i2012.setDisponivel(Float.valueOf(indices[i][6])*1000);
+                    i2011.setDisponivel(Float.valueOf(indices[i][6])*1000);
                 if (!"0".equals(indices[i][7]))
-                    i2011.setDisponivel(Float.valueOf(indices[i][7])*1000);                
+                    i2010.setDisponivel(Float.valueOf(indices[i][7])*1000);                
                 }
     }
         
@@ -351,8 +351,7 @@ public class LeitorCsv {
 		
 		
 		System.out.println(empinfo);
-//=======
-//>>>>>>> 8c41fd30e69538602f4ebbe47b3b1c425cc064b6
+
 
     } catch (FileNotFoundException e) {
         e.printStackTrace();

@@ -24,7 +24,6 @@ package JSONmaster;
  SOFTWARE.
  */
 
-import JSONmaster.JSONObject;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;

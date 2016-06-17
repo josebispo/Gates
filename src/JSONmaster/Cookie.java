@@ -1,7 +1,5 @@
 package JSONmaster;
 
-import JSONmaster.JSONObject;
-
 /*
 Copyright (c) 2002 JSON.org
 
