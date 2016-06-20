@@ -3,15 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/Users/Infranet/Documents/NetBeansProjects/Gates/src/LeitorCSV/LeitorCsv.java</file>
-            <file>file:/C:/Users/Infranet/Documents/NetBeansProjects/Gates/src/Telas/Empresa.java</file>
-            <file>file:/C:/Users/Infranet/Documents/NetBeansProjects/Gates/src/Telas/SeletorGUI.java</file>
-            <file>file:/C:/Users/Infranet/Documents/NetBeansProjects/Gates/src/dao/EmpresaDao.java</file>
-=======
-            <file>file:/C:/Users/Philippe/Projetos/Gates/src/LeitorCSV/LeitorCsv.java</file>
-            <file>file:/C:/Users/Philippe/Projetos/Gates/src/Telas/SeletorGUI.java</file>
->>>>>>> 8ac3e3f96f75732d6d6d6643e948579e22249741
+            <file>file:/C:/Users/Infranet/Documents/Gates/src/dao/EmpresaDao.java</file>
+            <file>file:/C:/Users/Infranet/Documents/Gates/src/gates/Principal.java</file>
+            <file>file:/C:/Users/Infranet/Documents/Gates/src/LeitorCSV/LeitorCsv.java</file>
         </group>
     </open-files>
 </project-private>
