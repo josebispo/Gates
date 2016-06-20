@@ -26,7 +26,7 @@ public class SeletorGUI extends javax.swing.JFrame {
         procurar = new javax.swing.JButton();
         OK = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         procurar.setText("Procurar");
         procurar.addActionListener(new java.awt.event.ActionListener() {
@@ -93,9 +93,9 @@ public class SeletorGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_procurarActionPerformed
     }
     private void OKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OKActionPerformed
-       
-        System.exit(0);
-            
+      
+       this.dispose();       
+           
     }//GEN-LAST:event_OKActionPerformed
       
     

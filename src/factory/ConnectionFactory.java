@@ -12,7 +12,7 @@ public class ConnectionFactory {
    
     public Connection getConnection() {         
         try {             
-            return DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","root","root");         
+            return DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","gerente","123456");         
             }         
         catch(SQLException excecao) {  
             

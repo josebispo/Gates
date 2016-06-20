@@ -36,6 +36,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Consumer;
 
 /**
  * A JSONArray is an ordered sequence of values. Its external text form is a
@@ -1184,8 +1185,8 @@ public class JSONArray implements Iterable<Object> {
      * @return a java.util.List containing the elements of this array
      */
     public List<Object> toList() {
-        List<Object> results = new ArrayList<Object>(this.myArrayList.size());
-        for (Object element : this.myArrayList) {
+        List<Object> results = new ArrayList<>(this.myArrayList.size());
+        this.myArrayList.stream().forEach((Object element) -> {
             if (element == null || JSONObject.NULL.equals(element)) {
                 results.add(null);
             } else if (element instanceof JSONArray) {
@@ -1195,7 +1196,7 @@ public class JSONArray implements Iterable<Object> {
             } else {
                 results.add(element);
             }
-        }
+        });
         return results;
     }
 }
