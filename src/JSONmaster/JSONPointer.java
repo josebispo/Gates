@@ -1,6 +1,5 @@
 package JSONmaster;
 
-import JSONmaster.JSONObject;
 import static java.lang.String.format;
 
 import java.io.UnsupportedEncodingException;

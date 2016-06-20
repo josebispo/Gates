@@ -24,7 +24,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-import JSONmaster.JSONObject;
 import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.Properties;
