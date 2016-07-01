@@ -1,7 +1,7 @@
 
 package LeitorCSV;
 
-import Telas.SeletorGUI;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,6 +10,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.LineNumberReader;
 import JSONmaster.JSONObject;
+import Telas.EmpresaGUI;
 
 
 
@@ -23,7 +24,7 @@ public class LeitorCsv {
   
   
   public void run() throws FileNotFoundException, IOException {
-    String arquivoCSV = SeletorGUI.leitor; //("BPA_MagazLuiza.csv");
+    String arquivoCSV = EmpresaGUI.leitor; //("BPA_MagazLuiza.csv");
     BufferedReader leitor = null;
     String linha;
     String csvDivisor = ",";
@@ -338,7 +339,7 @@ public class LeitorCsv {
                 empinfo.put("Rentabilidade 2013", indicadores2013.getRentabilidadePL());
 
 		try{
-			writeFile = new FileWriter(SeletorGUI.nome_arq+".json");
+			writeFile = new FileWriter(EmpresaGUI.nome_arq+".json");
 			
                        
                         

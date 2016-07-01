@@ -33,7 +33,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         menuCadastro = new javax.swing.JMenuItem();
         menuVisualizar = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         menuSair = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
@@ -62,14 +61,6 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         menuVisualizar.setText("Visualizar");
         jMenu1.add(menuVisualizar);
-
-        jMenuItem2.setText("Importar CSV");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItem2);
         jMenu1.add(jSeparator1);
 
         menuSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.SHIFT_MASK));
@@ -148,12 +139,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_menuReceitaActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-        SeletorGUI seletor = new SeletorGUI();
-        seletor.setVisible(true);
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -197,7 +182,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JMenuItem menuCadastro;
     private javax.swing.JMenuItem menuClientes;
