@@ -9,8 +9,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.LineNumberReader;
-import JSONmaster.JSONObject;
 import Telas.EmpresaGUI;
+import java.io.PrintWriter;
 
 
 
@@ -297,61 +297,39 @@ public class LeitorCsv {
         }
         
       
-        JSONObject empinfo = new JSONObject();
-        FileWriter writeFile = null;
-       
-   
-		empinfo.put("Endividamento 2015",indicadores2015.getEndividamento());
-                empinfo.put("Endividamento 2014",indicadores2014.getEndividamento());
-                empinfo.put("Endividamento 2013",indicadores2013.getEndividamento());
-		empinfo.put("Composicao do endividamento 2015", indicadores2015.getComposicaoendividamento());
-                empinfo.put("Composicao do endividamento 2014", indicadores2014.getComposicaoendividamento());
-                empinfo.put("Composicao do endividamento 2013", indicadores2013.getComposicaoendividamento());
-		empinfo.put("Imobilizacao 2015", indicadores2015.getImobilizacaoPL());
-                empinfo.put("Imobilizacao 2014", indicadores2014.getImobilizacaoPL());
-                empinfo.put("Imobilizacao 2013", indicadores2013.getImobilizacaoPL());
-		empinfo.put("Liquidez Geral 2015", indicadores2015.getLiquidezgeral());
-                empinfo.put("Liquidez Geral 2014", indicadores2014.getLiquidezgeral());
-                empinfo.put("Liquidez Geral 2013", indicadores2013.getLiquidezgeral());
-		empinfo.put("Liquidez Corrente 2015", indicadores2015.getLiqcorrente());
-                empinfo.put("Liquidez Corrente 2014", indicadores2014.getLiqcorrente());
-                empinfo.put("Liquidez Corrente 2013", indicadores2013.getLiqcorrente());
-                empinfo.put("Capital Circular Liquido 2015", indicadores2015.getCapcircliq());
-                empinfo.put("Capital Circular Liquido 2014", indicadores2014.getCapcircliq());
-                empinfo.put("Capital Circular Liquido 2013", indicadores2013.getCapcircliq());
-                empinfo.put("Liquidez Seca 2015", indicadores2015.getLiqseca());
-                empinfo.put("Liquidez Seca 2014", indicadores2014.getLiqseca());
-                empinfo.put("Liquidez Seca 2013", indicadores2013.getLiqseca());
-                empinfo.put("Liquidez Imediata 2015", indicadores2015.getLiqimediata());
-                empinfo.put("Liquidez Imediata 2014", indicadores2014.getLiqimediata());
-                empinfo.put("Liquidez Imediata 2013", indicadores2013.getLiqimediata());
-                empinfo.put("Giro do Ativo 2015", indicadores2015.getGirodoativo());
-                empinfo.put("Giro do Ativo 2014", indicadores2014.getGirodoativo());
-                empinfo.put("Giro do Ativo 2013", indicadores2013.getGirodoativo());
-                empinfo.put("Margem Liquida 2015", indicadores2015.getMargemliquida());
-                empinfo.put("Margem Liquida 2014", indicadores2014.getMargemliquida());
-                empinfo.put("Margem Liquida 2013", indicadores2013.getMargemliquida());
-                empinfo.put("Rentabilidade do Ativo 2015", indicadores2015.getRentabilidadedoativo());
-                empinfo.put("Rentabilidade do Ativo 2014", indicadores2014.getRentabilidadedoativo());
-                empinfo.put("Rentabilidade do Ativo 2013", indicadores2013.getRentabilidadedoativo());
-                empinfo.put("Rentabilidade 2015", indicadores2015.getRentabilidadePL());
-                empinfo.put("Rentabilidade 2014", indicadores2014.getRentabilidadePL());
-                empinfo.put("Rentabilidade 2013", indicadores2013.getRentabilidadePL());
+        //JSONObject empinfo = new JSONObject();
+        FileWriter writeFile = new FileWriter(EmpresaGUI.nome_arq+".json");
+
 
 		try{
-			writeFile = new FileWriter(EmpresaGUI.nome_arq+".json");
+			PrintWriter gravarArq = new PrintWriter(writeFile);
+                        //gravarArq.printf(""+indicadores2015.getEndividamento());
+                        gravarArq.printf("{"+"\n"+"name: "+"'Endividamento',"+"\n"+"data: ["+indicadores2015.getEndividamento()+","+indicadores2014.getEndividamento()+","+indicadores2013.getEndividamento()+"]"+"\n"+"}");
+                        gravarArq.printf("{"+"\n"+"name: "+"'Composicao do endividamento',"+"\n"+"data: ["+indicadores2015.getComposicaoendividamento()+","+indicadores2014.getComposicaoendividamento()+","+indicadores2013.getComposicaoendividamento()+"]"+"\n"+"}");
+                        gravarArq.printf("{"+"\n"+"name: "+"'Imobilizacao',"+"\n"+"data: ["+indicadores2015.getImobilizacaoPL()+","+indicadores2014.getImobilizacaoPL()+","+indicadores2013.getImobilizacaoPL()+"]"+"\n"+"}");
+                        gravarArq.printf("{"+"\n"+"name: "+"'Liquidez Geral',"+"\n"+"data: ["+indicadores2015.getLiquidezgeral()+","+indicadores2014.getLiquidezgeral()+","+indicadores2013.getLiquidezgeral()+"]"+"\n"+"}");
+                        gravarArq.printf("{"+"\n"+"name: "+"'Liquidez Corrente',"+"\n"+"data: ["+indicadores2015.getLiqcorrente()+","+indicadores2014.getLiqcorrente()+","+indicadores2013.getLiqcorrente()+"]"+"\n"+"}");
+                        gravarArq.printf("{"+"\n"+"name: "+"'Capital Circular Liquido',"+"\n"+"data: ["+indicadores2015.getCapcircliq()+","+indicadores2014.getCapcircliq()+","+indicadores2013.getCapcircliq()+"]"+"\n"+"}");
+                        gravarArq.printf("{"+"\n"+"name: "+"'Liquidez Seca',"+"\n"+"data: ["+indicadores2015.getLiqseca()+","+indicadores2014.getLiqseca()+","+indicadores2013.getLiqseca()+"]"+"\n"+"}");
+                        gravarArq.printf("{"+"\n"+"name: "+"'Liquidez Imediata',"+"\n"+"data: ["+indicadores2015.getLiqimediata()+","+indicadores2014.getLiqimediata()+","+indicadores2013.getLiqimediata()+"]"+"\n"+"}");
+                        gravarArq.printf("{"+"\n"+"name: "+"'Giro do Ativo',"+"\n"+"data: ["+indicadores2015.getGirodoativo()+","+indicadores2014.getGirodoativo()+","+indicadores2013.getGirodoativo()+"]"+"\n"+"}");
+                        gravarArq.printf("{"+"\n"+"name: "+"'Margem Liquida',"+"\n"+"data: ["+indicadores2015.getMargemliquida()+","+indicadores2014.getMargemliquida()+","+indicadores2013.getMargemliquida()+"]"+"\n"+"}");
+                        gravarArq.printf("{"+"\n"+"name: "+"'Rentabilidade do Ativo',"+"\n"+"data: ["+indicadores2015.getRentabilidadedoativo()+","+indicadores2014.getRentabilidadedoativo()+","+indicadores2013.getRentabilidadedoativo()+"]"+"\n"+"}");
+                        gravarArq.printf("{"+"\n"+"name: "+"'Rentabilidade',"+"\n"+"data: ["+indicadores2015.getRentabilidadePL()+","+indicadores2014.getRentabilidadePL()+","+indicadores2013.getRentabilidadePL()+"]"+"\n"+"}");
+                        writeFile.close();
+			//writeFile = new FileWriter(SeletorGUI.nome_arq+".json");
 			
                        
                         
-			writeFile.write(JSONObject.valueToString(empinfo));
-			writeFile.close();
+			//writeFile.write(JSONObject.valueToString(empinfo));
+			//writeFile.close();
 		}
 		catch(IOException e){
 			e.printStackTrace();
 		}
 		
 		
-		System.out.println(empinfo);
+		//System.out.println(empinfo);
 
 
     } catch (FileNotFoundException e) {

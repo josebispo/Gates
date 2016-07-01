@@ -1,1 +1,37 @@
-{"Composicao do endividamento 2013":40.62178039550781,"Composicao do endividamento 2015":35.2221565246582,"Composicao do endividamento 2014":40.6862678527832,"Liquidez Imediata 2015":0.17799948155879974,"Liquidez Imediata 2014":0.44236183166503906,"Liquidez Imediata 2013":0.5175806879997253,"Liquidez Geral 2013":0.9813628196716309,"Liquidez Geral 2014":0.9746278524398804,"Liquidez Geral 2015":0.9081822633743286,"Liquidez Seca 2013":2.616361141204834,"Liquidez Seca 2015":1.533576488494873,"Liquidez Seca 2014":1.740283489227295,"Giro do Ativo 2013":0.4091290533542633,"Liquidez Corrente 2013":1.859520435333252,"Giro do Ativo 2015":0.36693739891052246,"Giro do Ativo 2014":0.3851727247238159,"Endividamento 2014":0.6248100996017456,"Rentabilidade 2013":8.91528616193682E-4,"Endividamento 2015":0.8513137102127075,"Rentabilidade 2014":0.011111997067928314,"Liquidez Corrente 2014":1.7287638187408447,"Endividamento 2013":0.6649721264839172,"Liquidez Corrente 2015":1.533576488494873,"Margem Liquida 2013":0.13087840378284454,"Margem Liquida 2014":1.7755544185638428,"Rentabilidade 2015":-0.2457657903432846,"Rentabilidade do Ativo 2014":0.6838950514793396,"Rentabilidade do Ativo 2013":0.053546153008937836,"Margem Liquida 2015":-36.17840576171875,"Rentabilidade do Ativo 2015":-13.2752103805542,"Imobilizacao 2013":82.3344955444336,"Capital Circular Liquido 2014":3.475785216E9,"Capital Circular Liquido 2013":4.37280256E9,"Imobilizacao 2015":98.33113098144531,"Imobilizacao 2014":82.80509185791016,"Capital Circular Liquido 2015":2.398918656E9}
+{
+name: 'Endividamento',
+data: [0.8513137,0.6248101,0.6649721]
+}{
+name: 'Composicao do endividamento',
+data: [35.222157,40.686268,40.62178]
+}{
+name: 'Imobilizacao',
+data: [98.33113,82.80509,82.334496]
+}{
+name: 'Liquidez Geral',
+data: [0.90818226,0.97462785,0.9813628]
+}{
+name: 'Liquidez Corrente',
+data: [1.5335765,1.7287638,1.8595204]
+}{
+name: 'Capital Circular Liquido',
+data: [2.39891866E9,3.47578522E9,4.3728026E9]
+}{
+name: 'Liquidez Seca',
+data: [1.5335765,1.7402835,2.6163611]
+}{
+name: 'Liquidez Imediata',
+data: [0.17799948,0.44236183,0.5175807]
+}{
+name: 'Giro do Ativo',
+data: [0.3669374,0.38517272,0.40912905]
+}{
+name: 'Margem Liquida',
+data: [-36.178406,1.7755544,0.1308784]
+}{
+name: 'Rentabilidade do Ativo',
+data: [-13.27521,0.68389505,0.053546153]
+}{
+name: 'Rentabilidade',
+data: [-0.24576579,0.011111997,8.915286E-4]
+}
