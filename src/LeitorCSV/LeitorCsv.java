@@ -303,17 +303,22 @@ public class LeitorCsv {
 
 		try{
 			PrintWriter gravarArq = new PrintWriter(writeFile);
-                        gravarArq.printf("[{"+"\n"+"\"name\": "+"\"2015\","+"\n"+"\"data\": ["+indicadores2015.getEndividamento()+","+indicadores2015.getComposicaoendividamento()+","+indicadores2015.getImobilizacaoPL()+","+indicadores2015.getLiquidezgeral()+","
-                                    +indicadores2015.getLiqcorrente()+","+indicadores2015.getCapcircliq()+","+indicadores2015.getLiqseca()+","+indicadores2015.getLiqimediata()+","+indicadores2015.getGirodoativo()+","+
-                                    indicadores2015.getMargemliquida()+","+indicadores2015.getRentabilidadedoativo()+","+indicadores2015.getRentabilidadePL()+"]"+"\n"+"},");
+                        
+                        
+                        gravarArq.printf("[{"+"\n"+"\"name\": "+"\"2013\","+"\n"+"\"data\": ["+indicadores2013.getEndividamento()+","+indicadores2013.getComposicaoendividamento()+","+indicadores2013.getImobilizacaoPL()+","+indicadores2013.getLiquidezgeral()+","
+                                    +indicadores2013.getLiqcorrente()+","+indicadores2013.getCapcircliq()+","+indicadores2013.getLiqseca()+","+indicadores2013.getLiqimediata()+","+indicadores2013.getGirodoativo()+","+
+                                    indicadores2013.getMargemliquida()+","+indicadores2013.getRentabilidadedoativo()+","+indicadores2013.getRentabilidadePL()+"]"+"\n"+"},");
+                        
+                        
                         gravarArq.printf("{"+"\n"+"\"name\": "+"\"2014\","+"\n"+"\"data\": ["+indicadores2014.getEndividamento()+","+indicadores2014.getComposicaoendividamento()+","+indicadores2014.getImobilizacaoPL()+","+indicadores2014.getLiquidezgeral()+","
                                     +indicadores2014.getLiqcorrente()+","+indicadores2014.getCapcircliq()+","+indicadores2014.getLiqseca()+","+indicadores2014.getLiqimediata()+","+indicadores2014.getGirodoativo()+","+
                                     indicadores2014.getMargemliquida()+","+indicadores2014.getRentabilidadedoativo()+","+indicadores2014.getRentabilidadePL()+"]"+"\n"+"},");
-                        gravarArq.printf("{"+"\n"+"\"name\": "+"\"2013\","+"\n"+"\"data\": ["+indicadores2013.getEndividamento()+","+indicadores2013.getComposicaoendividamento()+","+indicadores2013.getImobilizacaoPL()+","+indicadores2013.getLiquidezgeral()+","
-                                    +indicadores2013.getLiqcorrente()+","+indicadores2013.getCapcircliq()+","+indicadores2013.getLiqseca()+","+indicadores2013.getLiqimediata()+","+indicadores2013.getGirodoativo()+","+
-                                    indicadores2013.getMargemliquida()+","+indicadores2013.getRentabilidadedoativo()+","+indicadores2013.getRentabilidadePL()+"]"+"\n"+"}]");
-                        writeFile.close();
+                        
+                        gravarArq.printf("{"+"\n"+"\"name\": "+"\"2015\","+"\n"+"\"data\": ["+indicadores2015.getEndividamento()+","+indicadores2015.getComposicaoendividamento()+","+indicadores2015.getImobilizacaoPL()+","+indicadores2015.getLiquidezgeral()+","
+                                    +indicadores2015.getLiqcorrente()+","+indicadores2015.getCapcircliq()+","+indicadores2015.getLiqseca()+","+indicadores2015.getLiqimediata()+","+indicadores2015.getGirodoativo()+","+
+                                    indicadores2015.getMargemliquida()+","+indicadores2015.getRentabilidadedoativo()+","+indicadores2015.getRentabilidadePL()+"]"+"\n"+"}]");
 	
+                        writeFile.close();
 		}
 		catch(IOException e){
 			e.printStackTrace();
