@@ -1,0 +1,208 @@
+1,Ativo Total,101.685.064,73.065.288,69.503.838
+01.01,Ativo Circulante,17.909.303,15.517.368,15.899.396
+01.01.01,Caixa e Equivalentes de Caixa,5.336.845,4.692.689,6.543.936
+1.01.01.01,Caixa e Contas Bancárias,233.742,64.010,101.921
+1.01.01.02,Aplicações Financeiras,5.103.103,4.628.679,6.442.015
+01.01.02,Aplicações Financeiras,,,
+1.01.02.01,Aplicações Financeiras Avaliadas a Valor Justo,,,
+1.01.02.01.01,Títulos para Negociação,,,
+1.01.02.01.02,Títulos Disponíveis para Venda,,,
+1.01.02.02,Aplicações Financeiras Avaliadas ao Custo Amortizado,,,
+1.01.02.02.01,Títulos Mantidos até o Vencimento,,,
+01.01.03,Contas a Receber,8.285.319,6.724.061,5.802.859
+1.01.03.01,Clientes,,,
+1.01.03.02,Outras Contas a Receber,,,
+01.01.04,Estoques,603.631,479.801,505.615
+01.01.05,Ativos Biológicos,,,
+01.01.06,Tributos a Recuperar,2.521.292,2.202.662,2.191.962
+1.01.06.01,Tributos Correntes a Recuperar,,,
+01.01.07,Despesas Antecipadas,356.446,303.551,257.286
+01.01.08,Outros Ativos Circulantes,805.770,1.114.604,597.738
+1.01.08.01,Ativos Não-Correntes a Venda,,,
+1.01.08.02,Ativos de Operações Descontinuadas,,,
+1.01.08.03,Outros,805.770,1.114.604,597.738
+1.01.08.03.01,Créditos com Partes Relacionadas,157.389,38.241,35.032
+1.01.08.03.02,Operações com Derivativos,81.306,613.939,89.499
+1.01.08.03.03,Depósitos e Bloqueios Judiciais,235.343,202.169,166.928
+1.01.08.03.04,Dividendos e Juros Sobre o Capital Próprio,489,0,1.140
+1.01.08.03.05,Outros Ativos,331.243,260.255,305.139
+01.02,Ativo Não Circulante,83.775.761,57.547.920,53.604.442
+01.02.01,Ativo Realizável a Longo Prazo,7.590.644,5.726.827,5.573.387
+1.02.01.01,Aplicações Financeiras Avaliadas a Valor Justo,,,
+1.02.01.01.01,Títulos para Negociação,,,
+1.02.01.01.02,Títulos Disponíveis para Venda,,,
+1.02.01.02,Aplicações Financeiras Avaliadas ao Custo Amortizado,,,
+1.02.01.02.01,Títulos Mantidos até o Vencimento,,,
+1.02.01.03,Contas a Receber,330.451,299.405,257.086
+1.02.01.03.01,Clientes,,,
+1.02.01.03.02,Outras Contas a Receber,,,
+1.02.01.04,Estoques,,,
+1.02.01.05,Ativos Biológicos,,,
+1.02.01.06,Tributos Diferidos,711.590,144.817,210.294
+1.02.01.06.01,Imposto de Renda e Contribuição Social Diferidos,,,
+1.02.01.07,Despesas Antecipadas,30.609,26.223,25.364
+1.02.01.08,Créditos com Partes Relacionadas,4.919,34.801,62.716
+1.02.01.08.01,Créditos com Coligadas,,,
+1.02.01.08.03,Créditos com Controladores,,,
+1.02.01.08.04,Créditos com Outras Partes Relacionadas,,,
+1.02.01.09,Outros Ativos Não Circulantes,6.513.075,5.221.581,5.017.927
+1.02.01.09.01,Ativos Não-Correntes a Venda,,,
+1.02.01.09.02,Ativos de Operações Descontinuadas,,,
+1.02.01.09.03,Tributos a Recuperar,409.653,340.205,368.388
+1.02.01.09.04,Depósitos e Bloqueios Judiciais,5.518.120,4.543.056,4.148.355
+1.02.01.09.05,Aplicações Financeiras em Garantia,109.864,125.353,106.455
+1.02.01.09.06,Operações com Derivativos,417.558,152.843,329.652
+1.02.01.09.07,Outros Ativos,57.880,60.124,65.077
+01.02.02,Investimentos,101.161,79.805,86.349
+1.02.02.01,Participações Societárias,101.161,79.805,86.349
+1.02.02.01.01,Participações em Coligadas,,,
+1.02.02.01.04,Outras Participações Societárias,101.161,79.805,86.349
+1.02.02.02,Propriedades para Investimento,,,
+01.02.03,Imobilizado,30.476.765,20.453.864,18.441.647
+1.02.03.01,Imobilizado em Operação,28.626.031,18.739.126,16.473.921
+1.02.03.02,Imobilizado Arrendado,,,
+1.02.03.03,Imobilizado em Andamento,1.850.734,1.714.738,1.967.726
+01.02.04,Intangível,45.607.191,31.287.424,29.503.059
+1.02.04.01,Intangíveis,,,
+1.02.04.01.01,Contrato de Concessão,,,
+1.02.04.02,Goodwill,,,
+2,Passivo Total,101.685.064,73.065.288,69.503.838
+02.01,Passivo Circulante,17.981.713,16.011.006,13.731.007
+02.01.01,Obrigações Sociais e Trabalhistas,698.846,591.381,431.403
+2.01.01.01,Obrigações Sociais,383.834,271.082,228.099
+2.01.01.02,Obrigações Trabalhistas,315.012,320.299,203.304
+02.01.02,Fornecedores,8.373.235,7.641.191,6.914.009
+2.01.02.01,Fornecedores Nacionais,,,
+2.01.02.02,Fornecedores Estrangeiros,,,
+02.01.03,Obrigações Fiscais,1.716.002,1.281.673,1.315.164
+2.01.03.01,Obrigações Fiscais Federais,507.415,280.132,307.588
+2.01.03.01.01,Imposto de Renda e Contribuição Social a Pagar,,,
+2.01.03.02,Obrigações Fiscais Estaduais,1.152.155,955.079,969.278
+2.01.03.03,Obrigações Fiscais Municipais,56.432,46.462,38.298
+02.01.04,Empréstimos e Financiamentos,2.342.991,2.264.518,1.523.713
+2.01.04.01,Empréstimos e Financiamentos,2.185.978,1.485.019,1.217.442
+2.01.04.01.01,Em Moeda Nacional,,,
+2.01.04.01.02,Em Moeda Estrangeira,,,
+2.01.04.02,Debêntures,120.924,755.047,286.929
+2.01.04.03,Financiamento por Arrendamento Financeiro,36.089,24.452,19.342
+02.01.05,Outras Obrigações,3.936.262,3.557.967,2.985.315
+2.01.05.01,Passivos com Partes Relacionadas,118.214,97.257,94.954
+2.01.05.01.01,Débitos com Coligadas,,,
+2.01.05.01.03,Débitos com Controladores,,,
+2.01.05.01.04,Débitos com Outras Partes Relacionadas,,,
+2.01.05.02,Outros,3.818.048,3.460.710,2.890.361
+2.01.05.02.01,Dividendos e JCP a Pagar,2.209.362,1.495.321,1.187.556
+2.01.05.02.02,Dividendo Mínimo Obrigatório a Pagar,,,
+2.01.05.02.03,Obrigações por Pagamentos Baseados em Ações,,,
+2.01.05.02.04,Operações com Derivativos,151.686,23.011,44.463
+2.01.05.02.05,Receita Diferida,564.557,717.019,817.551
+2.01.05.02.06,Outras Obrigações,892.443,1.225.359,840.791
+02.01.06,Provisões,914.377,674.276,561.403
+2.01.06.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,914.377,674.276,561.403
+2.01.06.01.01,Provisões Fiscais,,,
+2.01.06.01.02,Provisões Previdenciárias e Trabalhistas,128.652,124.599,92.712
+2.01.06.01.03,Provisões para Benefícios a Empregados,,,
+2.01.06.01.04,Provisões Cíveis,785.725,549.677,468.691
+2.01.06.02,Outras Provisões,,,
+2.01.06.02.01,Provisões para Garantias,,,
+2.01.06.02.02,Provisões para Reestruturação,,,
+2.01.06.02.03,Provisões para Passivos Ambientais e de Desativação,,,
+02.01.07,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,,,
+2.01.07.01,Passivos sobre Ativos Não-Correntes a Venda,,,
+2.01.07.02,Passivos sobre Ativos de Operações Descontinuadas,,,
+02.02,Passivo Não Circulante,15.136.109,12.104.187,12.878.389
+02.02.01,Empréstimos e Financiamentos,7.878.299,5.534.742,7.229.842
+2.02.01.01,Empréstimos e Financiamentos,4.193.914,1.917.234,3.015.620
+2.02.01.01.01,Em Moeda Nacional,,,
+2.02.01.01.02,Em Moeda Estrangeira,,,
+2.02.01.02,Debêntures,3.423.790,3.411.616,4.014.686
+2.02.01.03,Financiamento por Arrendamento Financeiro,260.595,205.892,199.536
+02.02.02,Outras Obrigações,922.911,1.168.880,239.491
+2.02.02.01,Passivos com Partes Relacionadas,3.772,22.276,10.210
+2.02.02.01.01,Débitos com Coligadas,,,
+2.02.02.01.03,Débitos com Controladores,,,
+2.02.02.01.04,Débitos com Outras Partes Relacionadas,,,
+2.02.02.02,Outros,919.139,1.146.604,229.281
+2.02.02.02.01,Obrigações por Pagamentos Baseados em Ações,,,
+2.02.02.02.02,Adiantamento para Futuro Aumento de Capital,,,
+2.02.02.02.03,Operações com Derivativos,82.421,24.133,24.807
+2.02.02.02.04,"Impostos, Taxas e Contribuições",87.018,67.126,75.074
+2.02.02.02.05,"Pessoal, Encargos e Benefícios Sociais",19.808,118.829,18.698
+2.02.02.02.06,Fornecedores,67.742,0,0
+2.02.02.02.07,Outras Obrigações,662.150,936.516,110.702
+02.02.03,Tributos Diferidos,0,0,722.634
+2.02.03.01,Imposto de Renda e Contribuição Social Diferidos,,,
+02.02.04,Provisões,5.975.662,4.917.783,4.432.761
+2.02.04.01,Provisões Fiscais Previdenciárias Trabalhistas e Cíveis,4.726.359,4.388.491,3.916.331
+2.02.04.01.01,Provisões Fiscais,2.736.191,2.396.041,2.148.800
+2.02.04.01.02,Provisões Previdenciárias e Trabalhistas,1.037.499,888.527,895.468
+2.02.04.01.03,Provisões para Benefícios a Empregados,85.343,456.129,370.351
+2.02.04.01.04,Provisões Cíveis,867.326,647.794,501.712
+2.02.04.02,Outras Provisões,1.249.303,529.292,516.430
+2.02.04.02.01,Provisões para Garantias,,,
+2.02.04.02.02,Provisões para Reestruturação,,,
+2.02.04.02.03,Provisões para Passivos Ambientais e de Desativação,,,
+2.02.04.02.04,Provisão para Desmantelamento,405.421,251.684,240.753
+2.02.04.02.05,Passivo Contingente,843.882,277.608,275.677
+02.02.05,Passivos sobre Ativos Não-Correntes a Venda e Descontinuados,,,
+2.02.05.01,Passivos sobre Ativos Não-Correntes a Venda,,,
+2.02.05.02,Passivos sobre Ativos de Operações Descontinuadas,,,
+02.02.06,Lucros e Receitas a Apropriar,359.237,482.782,253.661
+2.02.06.01,Lucros a Apropriar,,,
+2.02.06.02,Receitas a Apropriar,359.237,482.782,253.661
+2.02.06.03,Subvenções de Investimento a Apropriar,,,
+02.03,Patrimônio Líquido Consolidado,68.567.242,44.950.095,42.894.442
+02.03.01,Capital Social Realizado,63.571.416,37.798.110,37.798.110
+02.03.02,Reservas de Capital,1.272.564,2.616.449,2.616.449
+2.03.02.01,Ágio na Emissão de Ações,,,
+2.03.02.02,Reserva Especial de Ágio na Incorporação,1.435.757,2.799.004,2.799.004
+2.03.02.03,Alienação de Bônus de Subscrição,,,
+2.03.02.04,Opções Outorgadas,,,
+2.03.02.05,Ações em Tesouraria,-87.805,-112.107,-112.107
+2.03.02.06,Adiantamento para Futuro Aumento de Capital,,,
+2.03.02.07,Prêmio na Aquisição de Participação Societária,-75.388,-70.448,-70.448
+02.03.03,Reservas de Reavaliação,,,
+02.03.04,Reservas de Lucros,3.697.794,4.303.071,2.463.034
+2.03.04.01,Reserva Legal,1.703.643,1.532.630,1.285.797
+2.03.04.02,Reserva Estatutária,,,
+2.03.04.03,Reserva para Contingências,,,
+2.03.04.04,Reserva de Lucros a Realizar,,,
+2.03.04.05,Reserva de Retenção de Lucros,,,
+2.03.04.06,Reserva Especial para Dividendos Não Distribuídos,,,
+2.03.04.07,Reserva de Incentivos Fiscais,6.928,1.849,1.699
+2.03.04.08,Dividendo Adicional Proposto,1.287.223,2.768.592,1.175.538
+2.03.04.09,Ações em Tesouraria,,,
+2.03.04.10,Retenção de Lucros Para Expansão e Modernização,700.000,0,0
+02.03.05,Lucros/Prejuízos Acumulados,,,
+02.03.06,Ajustes de Avaliação Patrimonial,,,
+02.03.07,Ajustes Acumulados de Conversão,,,
+02.03.08,Outros Resultados Abrangentes,25.468,232.465,16.849
+02.03.09,Participação dos Acionistas Não Controladores,,,
+03.01,Receita de Venda de Bens e/ou Serviços,40.286.815,34.999.969,34.721.897
+03.02,Custo dos Bens e/ou Serviços Vendidos,-20.345.076,-17.222.675,-17.542.167
+03.03,Resultado Bruto,19.941.739,17.777.294,17.179.730
+03.04,Despesas/Receitas Operacionais,-14.700.105,-12.661.325,-12.302.606
+03.04.01,Despesas com Vendas,-12.005.477,-10.466.725,-9.686.170
+03.04.02,Despesas Gerais e Administrativas,-2.142.459,-1.803.803,-2.177.891
+03.04.03,Perdas pela Não Recuperabilidade de Ativos,,,
+03.04.04,Outras Receitas Operacionais,538.239,510.628,575.959
+03.04.05,Outras Despesas Operacionais,-1.092.444,-908.365,-959.354
+03.04.06,Resultado de Equivalência Patrimonial,2.036,6.940,-55.150
+03.05,Resultado Antes do Resultado Financeiro e dos Tributos,5.241.634,5.115.969,4.877.124
+03.06,Resultado Financeiro,-848.178,-361.995,-214.760
+03.06.01,Receitas Financeiras,4.728.665,1.983.386,1.748.277
+03.06.02,Despesas Financeiras,-5.576.843,-2.345.381,-1.963.037
+03.07,Resultado Antes dos Tributos sobre o Lucro,4.393.456,4.753.974,4.662.364
+03.08,Imposto de Renda e Contribuição Social sobre o Lucro,-973.207,182.685,-946.419
+03.08.01,Corrente,-939.500,-567.014,-623.768
+03.08.02,Diferido,-33.707,749.699,-322.651
+03.09,Resultado Líquido das Operações Continuadas,3.420.249,4.936.659,3.715.945
+3.10,Resultado Líquido de Operações Descontinuadas,,,
+3.10.01,Lucro/Prejuízo Líquido das Operações Descontinuadas,,,
+3.10.02,Ganhos/Perdas Líquidas sobre Ativos de Operações Descontinuadas,,,
+3.11,Lucro/Prejuízo Consolidado do Período,3.420.249,4.936.659,3.715.945
+3.11.01,Atribuído a Sócios da Empresa Controladora,3.420.249,4.936.659,3.715.945
+3.11.02,Atribuído a Sócios Não Controladores,,,
+3.99,Lucro por Ação - (Reais / Ação),,,
+3.99.01,Lucro Básico por Ação,,,
+3.99.02,Lucro Diluído por Ação,,,

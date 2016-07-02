@@ -1,0 +1,112 @@
+1,Ativo Total,18.394.514,15.289.994,14.239.874
+01.01,Caixa e Equivalentes de Caixa,7.294.348,4.769.733,4.815.748
+01.01.01,Caixa e Equivalentes de Caixa,253.849,168.570,1.119.132
+01.01.02,Reservas no Banco Central,667.201,799.548,1.151.929
+01.01.03,Créditos a Instituições Financeiras,6.373.298,3.801.615,2.544.687
+01.02,Aplicações Financeiras,6.262.955,5.468.651,4.603.086
+01.02.01,Aplicações Financeiras Avaliadas a Valor Justo,1.562.188,1.577.210,1.068.540
+1.02.01.01,Títulos para Negociação,382.751,295.912,354.301
+1.02.01.02,Títulos Disponíveis para Venda,1.179.437,1.281.298,714.239
+01.02.02,Aplicações Financeiras Avaliadas ao Custo Amortizado,4.700.767,3.891.441,3.534.546
+1.02.02.01,Títulos Mantidos até o Vencimento,4.700.767,3.891.441,3.534.546
+01.03,Empréstimos e Recebíveis,3.635.166,4.082.996,3.952.059
+01.04,Tributos Diferidos,241.813,175.452,143.942
+01.04.01,Imposto de Renda e Contribuição Social Diferidos,241.813,175.452,143.942
+01.05,Outros Ativos,801.514,685.650,613.424
+01.05.01,Ativos Não Correntes a Venda,50.751,14.720,13.928
+01.05.02,Ativos de Operações Descontinuadas,,,
+01.05.03,Outros,750.763,670.930,599.496
+1.05.03.01,Propriedades para Investimento,956,1.162,1.236
+1.05.03.02,Operações de Seguros,16.093,17.525,17.301
+1.05.03.03,Outros Ativos,733.714,652.243,580.959
+01.06,Investimentos,,,
+01.06.01,Participações em Coligadas,,,
+01.06.02,Outros,,,
+01.07,Imobilizado,133.694,89.290,94.403
+01.07.01,Imobilizado de Uso,133.694,89.290,94.403
+01.07.02,Imobilizado de Arrendamento,,,
+01.08,Intangível,25.024,18.222,17.212
+01.08.01,Intangíveis,25.024,18.222,17.212
+01.08.02,Goodwill,,,
+2,Passivo Total,18.394.514,15.289.994,14.239.874
+02.01,Passivos Financeiros para Negociação,,,
+02.02,Outros Passivos Financeiros ao Valor Justo no Resultado,,,
+02.03,Passivos Financeiros ao Custo Amortizado,16.108.126,13.237.515,12.385.893
+02.03.01,Depósitos de Clientes,8.702.777,8.227.102,7.667.146
+02.03.02,Recursos de Instituições Financeiras,6.762.331,4.569.190,4.483.297
+02.03.03,Títulos de Dívida Emitidos,643.018,441.223,235.450
+02.04,Provisões,206.901,156.572,116.345
+02.05,Passivos Fiscais,3.317,1.005,423
+02.05.01,Passivos de Impostos Correntes,3.317,1.005,423
+02.06,Outros Passivos,897.564,819.717,765.222
+02.06.01,Passivos de Operações de Seguros,3.101,3.116,2.979
+02.06.02,Provisões Técnicas de Seguros e Previdência,149.095,128.762,109.833
+02.06.03,Outros Passivos,745.368,687.839,652.410
+02.07,Passivos sobre Ativos Não Correntes a Venda e Descontinuados,,,
+02.07.01,Passivos sobre Ativos Não Correntes a Venda,,,
+02.07.02,Passivos sobre Ativos de Operações Descontinuadas,,,
+02.08,Patrimônio Líquido Consolidado,1.178.606,1.075.185,971.991
+02.08.01,Capital Social Realizado,1.015.000,725.702,725.702
+02.08.02,Reservas de Capital,,,
+2.08.02.01,Ágio na Emissão de Ações,,,
+2.08.02.02,Reserva Especial de Ágio na Incorporação,,,
+2.08.02.03,Alienação de Bônus de Subscrição,,,
+2.08.02.04,Opções Outorgadas,,,
+2.08.02.05,Ações em Tesouraria,,,
+02.08.03,Reservas de Reavaliação,,,
+02.08.04,Reservas de Lucros,141.988,331.659,231.790
+2.08.04.01,Reserva Legal,49.905,43.686,37.002
+2.08.04.02,Reserva Estatutária,88.083,287.973,194.788
+2.08.04.03,Reserva para Contingências,,,
+2.08.04.04,Reserva de Lucros a Realizar,,,
+2.08.04.05,Reserva de Retenção de Lucros,,,
+2.08.04.06,Reserva Especial para Dividendos Não Distribuídos,,,
+2.08.04.07,Reserva de Incentivos Fiscais,,,
+2.08.04.08,Dividendo Adicional Proposto,4.000,0,0
+2.08.04.09,Ações em Tesouraria,,,
+02.08.05,Lucros/Prejuízos Acumulados,22.062,16.882,8.097
+02.08.06,Ajustes de Avaliação Patrimonial,-444,942,6.402
+02.08.07,Ajustes Acumulados de Conversão,,,
+02.08.08,Outros Resultados Abrangentes,,,
+02.08.09,Participação dos Acionistas Não Controladores,,,
+03.01,Receitas da Intermediação Financeira,2.238.017,1.752.613,1.368.555
+03.01.01,Receita com Juros de Similares,2.233.326,1.751.821,1.366.453
+03.01.02,Resultado de Instrumentos Financeiros para Negociação,2.842,792,426
+03.01.03,Resultado de Ativos Financeiros Disponíveis para Venda,1.849,0,1.676
+03.01.04,Resultado de Instrumentos Financeiros a Valor Justo por Meio do Resultado,,,
+03.02,Despesas da Intermediação Financeira,-1.460.241,-1.069.151,-775.252
+03.02.01,Despesas com Juros de Similares,-1.460.241,-1.069.151,-775.252
+03.03,Resultado Bruto Intermediação Financeira,777.776,683.462,593.303
+03.04,Outras Despesas/Receitas Operacionais,-602.264,-490.961,-440.018
+03.04.01,Receitas de Prestação de Serviços,255.625,243.542,219.239
+03.04.02,Despesas de Pessoal,-350.732,-315.577,-279.502
+03.04.03,Outras Despesas Administrativas,-200.287,-180.788,-179.224
+03.04.04,Despesas Tributárias,-71.556,-68.935,-56.937
+03.04.05,Outras Receitas Operacionais,113.326,114.626,114.994
+3.04.05.01,Resultado de Seguros e Previdência,58.075,50.704,47.550
+3.04.05.02,Outras Receitas Operacionais,32.761,35.081,40.298
+3.04.05.03,"Resultado da Alienação de Ativos Não Correntes Mantidos para Venda, Prop. P/Investimento e Imobiliza",5.044,10.072,9.253
+3.04.05.05,Resultado de Operações de Câmbio e Variação Cambial,17.446,18.769,17.893
+03.04.06,Outras Despesas Operacionais,-348.640,-283.829,-258.588
+3.04.06.01,Perda Líquida de Impairment em Ativos Financeiros,-200.328,-141.326,-141.597
+3.04.06.02,Depreciações e Amortizações,,,
+3.04.06.03,Resultado Líquido com Provisões,-48.335,-42.664,-27.302
+3.04.06.06,Despesas com Prestação de Serviços,-70.972,-67.136,-69.706
+3.04.06.07,Outras Despesas Operacionais,-29.005,-32.703,-19.983
+03.04.07,Resultado da Equivalência Patrimonial,,,
+03.05,Resultado Antes dos Tributos sobre o Lucro,175.512,192.501,153.285
+03.06,Imposto de Renda e Contribuição Social sobre o Lucro,-19.148,-49.652,-39.809
+03.06.01,Corrente,-84.504,-72.783,-63.077
+03.06.02,Diferido,65.356,23.131,23.268
+03.07,Resultado Líquido das Operações Continuadas,156.364,142.849,113.476
+03.08,Resultado Líquido das Operações Descontinuadas,,,
+03.08.01,Lucro/Prejuízo Líquido das Operações Descontinuadas,,,
+03.08.02,Ganhos/Perdas Líquidas sobre Ativos de Operações Descontinuadas,,,
+03.09,Lucro/Prejuízo Consolidado do Período,156.364,142.849,113.476
+03.09.01,Atribuído a Sócios da Empresa Controladora,156.364,142.849,113.476
+03.09.02,Atribuído a Sócios Não Controladores,,,
+3.99,Lucro por Ação - (R$ / Ação),,,
+3.99.01,Lucro Básico por Ação,,,
+3.99.01.01,ON,"0,49","0,09","0,07"
+3.99.01.02,PN,"0,49","0,09","0,07"
+3.99.02,Lucro Diluído por Ação,,,
