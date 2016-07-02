@@ -5,6 +5,9 @@
         <group>
             <file>file:/C:/Users/Philippe/Projetos/Gates/src/LeitorCSV/LeitorCsv.java</file>
             <file>file:/C:/Users/Philippe/Projetos/Gates/src/dao/IndicesDao.java</file>
+            <file>file:/C:/Users/Philippe/Projetos/Gates/src/factory/ConnectionFactory.java</file>
+            <file>file:/C:/Users/Philippe/Projetos/Gates/src/dao/EmpresaDao.java</file>
+            <file>file:/C:/Users/Philippe/Projetos/Gates/src/factory/TestaConexao.java</file>
         </group>
     </open-files>
 </project-private>
